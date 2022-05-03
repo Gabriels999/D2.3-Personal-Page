@@ -24,11 +24,15 @@ li {
 }
 
 header {
-  padding-top: 40px;
   background-color: var(--main);
   color: white;
   font-size: 24px;
   padding: 2% 0 2% 12%;
+  position: sticky;
+  top: 0;
+}
+span {
+  color: var(--hover);
 }
 .nav-freela {
   display: inline-block;
@@ -48,9 +52,10 @@ header {
   color: white;
   font-size: 20px;
 }
-span {
-  color: var(--hover);
+.navbar > li > a:hover {
+  border-bottom: 5px solid var(--hover);
 }
+
 .container {
   padding-top: 1%;
   text-align: center;
@@ -198,7 +203,7 @@ h2 {
   background-color: var(--main);
   border-radius: 10px;
   height: 300px;
-  padding: 20px 30px 0px;
+  padding: 55px 55px 0px;
   box-sizing: content-box;
 }
 .services-block > h4,
@@ -222,8 +227,9 @@ p {
   padding: 0 3.5%;
 }
 .exp-title {
-  padding-top: 1%;
+  padding: 1% 0 3% 0;
   text-align: center;
+  margin-top: 3%;
 }
 .exp-field {
   width: 80%;
@@ -257,7 +263,7 @@ p {
 
 .card-hire {
   width: 70%;
-  margin: 0 15%;
+  margin: 4% 15%;
   border-radius: 15px;
   background-image: url(./images/bg.png);
   box-shadow: 0 0 1em var(--hover);
@@ -284,6 +290,12 @@ p {
 .endpage {
   text-align: center;
 }
+.endpage > p {
+  text-align: center;
+  font-size: 20px;
+  padding: 20px 0;
+}
+
 .navbar-end {
   text-align: center;
 }
@@ -293,10 +305,8 @@ p {
 .navbar-end > li > a {
   color: var(--hover);
 }
-.endpage > p {
-  text-align: center;
-  font-size: 20px;
-  padding: 20px 0;
+.navbar-end > li > a:hover {
+  border-bottom: 5px solid var(--hover);
 }
 
 .owner {
